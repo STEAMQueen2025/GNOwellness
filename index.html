@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GNO Health &amp; Wellness Alliance — Free fitness &amp; wellness in New Orleans</title>
+<meta name="description" content="A New Orleans nonprofit. Free functional fitness classes for every body, and gentle help to clear clutter after a loss. Everyone is welcome.">
+<link rel="icon" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", function(user) {
+    if (!user) {
+      window.netlifyIdentity.on("login", function() { document.location.href = "/admin/"; });
+    }
+  });
+}
+</script>
+</head>
+<body id="top">
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="GNO Health and Wellness Alliance home">
+      <img src="{{settings.logo}}" alt="GNO Health and Wellness Alliance logo">
+      <span><b>GNO Health &amp; Wellness</b><small>Alliance · New Orleans</small></span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html#mission">Mission</a>
+      <div class="has-drop">
+        <a class="drop-toggle" id="dropToggle" href="index.html#programs" aria-haspopup="true" aria-expanded="false">Programs <span class="caret">▾</span></a>
+        <div class="dropdown" id="dropMenu">
+          <a href="moving-with-monique.html">Moving with Monique<small>Free functional fitness</small></a>
+          <a href="elphage-organizing.html">Elphage Organizing<small>Clear space, clear mind</small></a>
+        </div>
+      </div>
+      <a href="index.html#community">Community</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="index.html#join">Join a Class</a>
+      <a href="index.html#involved">Get Involved</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-red" href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-blur hb1"></span>
+  <span class="hero-blur hb2"></span>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">{{home.hero_eyebrow}}</span>
+      <h1>{{home.hero_title}}</h1>
+      <p class="hero-lead">{{home.hero_lead}}</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="index.html#join">Join a free class <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="index.html#involved">Support our work</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag"><b>Free</b> for everyone</span>
+        <span class="tag">All ages &amp; abilities</span>
+        <span class="tag">Seniors welcome</span>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="frame">
+        <img src="img-community-large.jpg" alt="A group of New Orleans neighbors of all ages together after a fitness class">
+      </div>
+      <div class="hero-badge">
+        <div class="big">Every body</div>
+        <div class="sub">Real people, every age, moving and healing together.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="pillars" id="programs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>{{home.programs_title}}</h2>
+      <p>{{home.programs_sub}}</p>
+    </div>
+
+    <div class="diptych reveal">
+      <article class="pillar body">
+        <div class="pnum">{{home.p1_num}}</div>
+        <h3>{{home.p1_title}}</h3>
+        <div class="tagline">{{home.p1_tagline}}</div>
+        <p>{{home.p1_desc}}</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#FF8A9A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p1_point1}}</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#FF8A9A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p1_point2}}</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#FF8A9A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p1_point3}}</li>
+        </ul>
+        <div class="pcta"><a class="btn btn-ghost" href="moving-with-monique.html">Explore Moving with Monique <span class="arr">→</span></a></div>
+      </article>
+
+      <div class="seal" aria-hidden="true">&amp;</div>
+
+      <article class="pillar mind">
+        <div class="pnum">{{home.p2_num}}</div>
+        <h3>{{home.p2_title}}</h3>
+        <div class="tagline">{{home.p2_tagline}}</div>
+        <p>{{home.p2_desc}}</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#BA0C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p2_point1}}</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#BA0C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p2_point2}}</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m5 12 4.5 4.5L19 7" stroke="#BA0C2F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{home.p2_point3}}</li>
+        </ul>
+        <div class="pcta"><a class="btn btn-ghost" href="elphage-organizing.html">Explore Elphage Organizing <span class="arr">→</span></a></div>
+      </article>
+    </div>
+    <p class="pillar-foot reveal">Body <b>&amp;</b> mind. Strength <b>&amp;</b> release. That's the whole of it.</p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="about on-navy" id="mission">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Our mission</span>
+      <blockquote>{{home.mission_quote}}</blockquote>
+    </div>
+    <div class="reveal">
+      <div class="body-copy">
+        <p>{{home.mission_p1}}</p>
+        <p>{{home.mission_p2}}</p>
+      </div>
+      <div class="mission-card" style="margin-top:1.6rem">
+        <div class="label">Why it matters</div>
+        <p>{{home.mission_p3}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community" id="community">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our community</span>
+      <h2>Showing up for each other.</h2>
+      <p>Every week, neighbors of all ages come together. We sweat. We laugh. We heal. You never have to do it alone.</p>
+    </div>
+    <div class="gal reveal">
+      <figure class="span2">
+        <img src="img-community-large.jpg" alt="A large group of all ages after a class">
+        <figcaption>One class, every generation.</figcaption>
+      </figure>
+      <figure>
+        <img src="fit-keg-1.jpg" alt="A member carrying a weight during a functional fitness class">
+        <figcaption>Real strength, real life.</figcaption>
+      </figure>
+      <figure>
+        <img src="fit-group-dog.jpg" alt="Smiling group after a workout, with a small dog">
+        <figcaption>All are welcome — even the dog.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN A CLASS -->
+<section class="join" id="join">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Join a class</span>
+      <h2>{{home.join_title}}</h2>
+      <p>Our functional fitness class is free and open to all. Here's when and where to meet us.</p>
+    </div>
+    <div class="join-grid">
+      <div class="reveal">
+        <div class="sched">
+          <div class="row">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><span class="k">When</span><span class="v">{{settings.class_when}}</span></span>
+          </div>
+          <div class="row">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="#fff" stroke-width="1.8"/></svg></span>
+            <span><span class="k">Where</span><span class="v">{{settings.venue}} · {{settings.address}}</span></span>
+          </div>
+        </div>
+
+        <h3 style="color:var(--navy);font-size:1.3rem;margin-bottom:.8rem">How to save your spot</h3>
+        <ol class="steps">
+          <li>{{home.step1}}</li>
+          <li>{{home.step2}}</li>
+          <li>{{home.step3}}</li>
+          <li>{{home.step4}}</li>
+          <li>{{home.step5}}</li>
+        </ol>
+        <a class="btn btn-red" href="{{settings.reserve_url}}" target="_blank" rel="noopener">Reserve at {{settings.venue}} <span class="arr">→</span></a>
+      </div>
+
+      <div class="help-card reveal">
+        <h3>{{home.help_title}}</h3>
+        <p class="sub">{{home.help_text}}</p>
+        <a class="btn btn-red" href="{{settings.form_url}}" target="_blank" rel="noopener" style="width:100%;justify-content:center">Send us a note <span class="arr">→</span></a>
+        <p class="sub" style="margin:1.1rem 0 0;text-align:center">Prefer to talk? Call or text <a href="tel:{{settings.phone_tel}}" style="color:var(--red);font-weight:600">{{settings.phone_display}}</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section class="involved on-navy" id="involved">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Get involved</span>
+      <h2>Help us keep it free.</h2>
+      <p>Every class is free. It stays free because people like you help. Here's how you can pitch in.</p>
+    </div>
+    <div class="inv-grid">
+      <div class="ways reveal">
+        <div class="way">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 8v6m-3-3h6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><h4>Give a gift</h4><p>Your gift is tax-deductible. It pays for free classes and wellness help for our neighbors.</p></div>
+        </div>
+        <div class="way">
+          <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="#fff" stroke-width="1.8"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <div><h4>Volunteer your time</h4><p>Help coach, set up, or lend a hand with an Elphage Organizing visit. Every bit helps.</p></div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <h3 class="ch">Reach out today</h3>
+        <p class="cd">Join a class, ask a question, or give a gift. We'd love to hear from you.</p>
+        <a class="cline" href="mailto:{{settings.email}}">
+          <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#0C2340" stroke-width="1.8"/><path d="m4 7 8 5 8-5" stroke="#0C2340" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span>{{settings.email}}<small>Email us anytime</small></span>
+        </a>
+        <a class="cline" href="tel:{{settings.phone_tel}}">
+          <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L19 18l1 2v-2c0 .5-3 2-5 1.2C9 17 5 12 4.8 6 4.7 4.6 5 4 5 4Z" stroke="#0C2340" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span>{{settings.phone_display}}<small>Call or text</small></span>
+        </a>
+        <a class="cline" href="{{settings.instagram_url}}" target="_blank" rel="noopener">
+          <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="#0C2340" stroke-width="1.8"/><circle cx="12" cy="12" r="3.4" stroke="#0C2340" stroke-width="1.8"/><circle cx="17" cy="7" r="1" fill="#0C2340"/></svg></span>
+          <span>@gno_healthandwellness<small>Follow us on Instagram</small></span>
+        </a>
+        <div class="give">
+          <a class="btn btn-red" href="{{settings.donate_url}}" target="_blank" rel="noopener" style="width:100%;justify-content:center">Donate to GNO Health &amp; Wellness</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-name">GNO Health &amp; Wellness Alliance</div>
+        <p>Free fitness and gentle wellness help across Greater New Orleans.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h5>Explore</h5>
+          <a href="index.html#mission">Mission</a>
+          <a href="moving-with-monique.html">Moving with Monique</a>
+          <a href="elphage-organizing.html">Elphage Organizing</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="index.html#join">Join a Class</a>
+        </div>
+        <div class="foot-col">
+          <h5>Connect</h5>
+          <a href="mailto:{{settings.email}}">Email us</a>
+          <a href="tel:{{settings.phone_tel}}">{{settings.phone_display}}</a>
+          <a href="{{settings.instagram_url}}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GNO Health and Wellness Alliance. All rights reserved.</span>
+      <span class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4Z" stroke="#6F8198" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        501(c)(3) Nonprofit · Gifts are tax-deductible
+      </span>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin:1.2rem 0 0;font-size:.8rem"><a href="/admin/" style="color:rgba(255,255,255,.45)">Staff login</a></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

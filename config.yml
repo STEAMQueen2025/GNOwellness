@@ -1,0 +1,156 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+site_url: /
+display_url: /
+
+collections:
+  - name: "settings"
+    label: "⚙️ Contact Info & Links"
+    files:
+      - file: "content/settings.json"
+        name: "settings"
+        label: "Contact Info & Links"
+        fields:
+          - { name: phone_display, label: "Phone number (as shown)", widget: string }
+          - { name: phone_tel, label: "Phone number (for tap-to-call, format +1XXXXXXXXXX)", widget: string }
+          - { name: email, label: "Email address", widget: string }
+          - { name: address, label: "Class address", widget: string }
+          - { name: venue, label: "Class location name", widget: string }
+          - { name: class_when, label: "Class day & time", widget: string }
+          - { name: donate_url, label: "Donate link (Zeffy)", widget: string }
+          - { name: form_url, label: "Contact form link (Google Form)", widget: string }
+          - { name: instagram_url, label: "Instagram link", widget: string }
+          - { name: reserve_url, label: "Class reservation link", widget: string }
+          - { name: logo, label: "Logo image", widget: image }
+
+  - name: "pages"
+    label: "📄 Pages"
+    files:
+      - file: "content/home.json"
+        name: "home"
+        label: "Home page"
+        fields:
+          - { name: hero_eyebrow, label: "Top small line", widget: string }
+          - { name: hero_title, label: "Big headline (HTML allowed)", widget: text }
+          - { name: hero_lead, label: "Headline paragraph", widget: text }
+          - { name: programs_title, label: "Programs section title", widget: string }
+          - { name: programs_sub, label: "Programs section intro", widget: text }
+          - { name: p1_num, label: "Program 1 — small label", widget: string }
+          - { name: p1_title, label: "Program 1 — name", widget: string }
+          - { name: p1_tagline, label: "Program 1 — tagline", widget: string }
+          - { name: p1_desc, label: "Program 1 — description", widget: text }
+          - { name: p1_point1, label: "Program 1 — bullet 1", widget: string }
+          - { name: p1_point2, label: "Program 1 — bullet 2", widget: string }
+          - { name: p1_point3, label: "Program 1 — bullet 3", widget: string }
+          - { name: p2_num, label: "Program 2 — small label", widget: string }
+          - { name: p2_title, label: "Program 2 — name", widget: string }
+          - { name: p2_tagline, label: "Program 2 — tagline", widget: string }
+          - { name: p2_desc, label: "Program 2 — description", widget: text }
+          - { name: p2_point1, label: "Program 2 — bullet 1", widget: string }
+          - { name: p2_point2, label: "Program 2 — bullet 2", widget: string }
+          - { name: p2_point3, label: "Program 2 — bullet 3", widget: string }
+          - { name: mission_quote, label: "Mission quote (HTML allowed)", widget: text }
+          - { name: mission_p1, label: "Mission paragraph 1", widget: text }
+          - { name: mission_p2, label: "Mission paragraph 2", widget: text }
+          - { name: mission_p3, label: "Why it matters paragraph", widget: text }
+          - { name: join_title, label: "Join section title", widget: string }
+          - { name: step1, label: "How-to step 1 (HTML allowed)", widget: text }
+          - { name: step2, label: "How-to step 2 (HTML allowed)", widget: text }
+          - { name: step3, label: "How-to step 3 (HTML allowed)", widget: text }
+          - { name: step4, label: "How-to step 4", widget: text }
+          - { name: step5, label: "How-to step 5", widget: text }
+          - { name: help_title, label: "Help card title", widget: string }
+          - { name: help_text, label: "Help card text", widget: text }
+      - file: "content/mwm.json"
+        name: "mwm"
+        label: "Moving with Monique page"
+        fields:
+          - { name: hero_eyebrow, label: "Top small line", widget: string }
+          - { name: hero_title, label: "Page headline", widget: string }
+          - { name: hero_lead, label: "Headline paragraph", widget: text }
+          - { name: intro_eyebrow, label: "About section — small label", widget: string }
+          - { name: intro_title, label: "About section — title", widget: string }
+          - { name: intro_p1, label: "About paragraph 1 (HTML allowed)", widget: text }
+          - { name: intro_p2, label: "About paragraph 2", widget: text }
+          - { name: intro_p3, label: "About paragraph 3 (HTML allowed)", widget: text }
+          - { name: join_title, label: "Schedule section title", widget: string }
+          - { name: step1, label: "How-to step 1 (HTML allowed)", widget: text }
+          - { name: step2, label: "How-to step 2 (HTML allowed)", widget: text }
+          - { name: step3, label: "How-to step 3 (HTML allowed)", widget: text }
+          - { name: step4, label: "How-to step 4", widget: text }
+          - { name: step5, label: "How-to step 5", widget: text }
+          - { name: gallery_title, label: "Photo section title", widget: string }
+          - name: gallery
+            label: "Class photos"
+            widget: list
+            fields:
+              - { name: image, label: "Photo", widget: image }
+              - { name: alt, label: "Photo description (for accessibility)", widget: string }
+              - { name: caption, label: "Caption", widget: string }
+              - { name: wide, label: "Featured (wide) photo", widget: boolean, default: false }
+          - { name: cta_title, label: "Bottom banner title", widget: string }
+      - file: "content/elphage.json"
+        name: "elphage"
+        label: "Elphage Organizing page"
+        fields:
+          - { name: hero_eyebrow, label: "Top small line", widget: string }
+          - { name: hero_title, label: "Page headline", widget: string }
+          - { name: hero_lead, label: "Headline paragraph", widget: text }
+          - { name: intro_eyebrow, label: "Intro section — small label", widget: string }
+          - { name: intro_title, label: "Intro section — title", widget: string }
+          - { name: intro_p1, label: "Intro paragraph 1", widget: text }
+          - { name: intro_p2, label: "Intro paragraph 2", widget: text }
+          - { name: intro_p3, label: "Intro paragraph 3 (HTML allowed)", widget: text }
+          - { name: ba_title, label: "Before & after — title", widget: string }
+          - { name: ba_sub, label: "Before & after — intro line", widget: text }
+          - name: ba_pairs
+            label: "Before & after photos"
+            widget: list
+            fields:
+              - { name: before, label: "Before photo (leave empty for a single photo)", widget: image, required: false }
+              - { name: before_alt, label: "Before photo description", widget: string, required: false }
+              - { name: after, label: "After photo", widget: image }
+              - { name: after_alt, label: "After photo description", widget: string }
+              - { name: caption, label: "Caption", widget: string }
+          - { name: how_title, label: "How it works — title", widget: string }
+          - { name: how_sub, label: "How it works — intro line", widget: text }
+          - name: how_cards
+            label: "How it works — steps"
+            widget: list
+            fields:
+              - { name: title, label: "Step title", widget: string }
+              - { name: text, label: "Step text", widget: text }
+          - { name: join_title, label: "Contact section title", widget: string }
+          - { name: help_title, label: "Help card title", widget: string }
+          - { name: help_text, label: "Help card text", widget: text }
+          - { name: cta_title, label: "Bottom banner title", widget: string }
+      - file: "content/leadership.json"
+        name: "leadership"
+        label: "Leadership page"
+        fields:
+          - { name: hero_title, label: "Page headline", widget: string }
+          - name: members
+            label: "Board members"
+            widget: list
+            fields:
+              - { name: photo, label: "Photo", widget: image }
+              - { name: alt, label: "Photo description (for accessibility)", widget: string }
+              - { name: name, label: "Name", widget: string }
+              - { name: title, label: "Title", widget: string }
+              - name: bios
+                label: "Bio paragraphs"
+                widget: list
+                fields:
+                  - { name: text, label: "Paragraph", widget: text }
+              - name: creds
+                label: "Credential chips (optional)"
+                widget: list
+                required: false
+                fields:
+                  - { name: text, label: "Credential", widget: string }
+              - { name: quote, label: "Pull quote (optional)", widget: text, required: false }

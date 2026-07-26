@@ -1,0 +1,98 @@
+{
+  "hero_title": "Our leadership &amp; board",
+  "members": [
+    {
+      "photo": "img-director.jpg",
+      "alt": "Monique Dupard-Dayries, Vice President and Executive Director",
+      "name": "Monique Dupard-Dayries",
+      "title": "Vice President &amp; Executive Director",
+      "bios": [
+        {
+          "text": "Monique has been passionate about community building her whole life. Inspired by the impact of fitness on a community's quality of life, she brings her experience in banking, nonprofit organizing, and athletics together to lead GNO Health and Wellness."
+        },
+        {
+          "text": "Monique is a John Curtis alumna and was honored as a Hall of Fame inductee in 2023. She is a CrossFit Level 2 trainer, specializing in making fitness accessible to all ability levels."
+        }
+      ],
+      "creds": [
+        {
+          "text": "CrossFit L2 Trainer"
+        },
+        {
+          "text": "Personal Trainer"
+        },
+        {
+          "text": "Hyrox Certified"
+        },
+        {
+          "text": "Strongman"
+        }
+      ],
+      "quote": ""
+    },
+    {
+      "photo": "board-dominique.jpg",
+      "alt": "Dominique Dupard-Elphage, President and Board Chair",
+      "name": "Dominique Dupard-Elphage",
+      "title": "President &amp; Board Chair",
+      "bios": [
+        {
+          "text": "Serving others has always been at the heart of who Dominique is, and it has guided both her personal and professional journey. She holds a Master of Science in School Counseling from Capella University, and for more than a decade she has worked as a Support Coordinator, advocating for and supporting children with disabilities and their families."
+        },
+        {
+          "text": "A collegiate athlete at Dillard University, Dominique now serves as President of GNO Health &amp; Wellness. She is passionate about inspiring others to prioritize their physical and mental well-being, regain motivation, and create spaces that promote peace and productivity through organization and decluttering."
+        }
+      ],
+      "creds": [],
+      "quote": "\"I believe everyone deserves a fresh start, a supportive community, and a judgment-free space where they can grow, heal, and thrive. Through GNO Health &amp; Wellness, my mission is to encourage healthier lifestyles, build stronger communities, and empower people to become the best version of themselves.\""
+    },
+    {
+      "photo": "board-laura.jpg",
+      "alt": "Laura Owen, Director of Fundraising",
+      "name": "Laura Owen",
+      "title": "Director of Fundraising · Board",
+      "bios": [
+        {
+          "text": "Laura has over twenty years of experience in public education. Her current role involves supporting students with disabilities and their families. She holds a Master's degree in Special Education from Northwestern State University. A multi-sport athlete since childhood, she is deeply moved by GNO Health &amp; Wellness's commitment to financially and physically accessible fitness. In her spare time, she practices fiber and ceramic arts."
+        }
+      ],
+      "creds": [],
+      "quote": ""
+    },
+    {
+      "photo": "board-danielle.jpg",
+      "alt": "Danielle E. Smith, Secretary",
+      "name": "Danielle E. Smith",
+      "title": "Secretary · Board of Directors",
+      "bios": [
+        {
+          "text": "Danielle serves as a dedicated member of the Board of Directors for GNO Health and Wellness, bringing a powerful combination of healthcare expertise and a deep commitment to community vitality. She has worked in the healthcare industry since 2018."
+        },
+        {
+          "text": "She leverages her professional experience to help guide the organization's health initiatives, working directly with community members and providing hands-on support during fitness classes."
+        },
+        {
+          "text": "Danielle actively champions the organization's local health campaigns and community outreach. She firmly believes that functional fitness and strength training are the ultimate keys to living a long, healthy life."
+        }
+      ],
+      "creds": [],
+      "quote": ""
+    },
+    {
+      "photo": "board-batini.jpg",
+      "alt": "Batini Green-Brown, Member Outreach",
+      "name": "Batini Green-Brown",
+      "title": "Member Outreach · Board of Directors",
+      "bios": [
+        {
+          "text": "Batini has 27 years of experience in public education. She holds a Master's degree in educational administration from the University of Missouri–Kansas City (UMKC). Currently she works as an Early Literacy Leader, coaching teachers and administrators on effective literacy facilitation."
+        },
+        {
+          "text": "Batini began her health journey in 2014 with the NORD fitness classes, where she met Monique. GNO Health and Wellness holds a special place in her heart — her mother (and their mascot dog) attend the community class every Saturday. Batini was instrumental in coordinating the very first Moving with Monique functional fitness class in April 2022."
+        }
+      ],
+      "creds": [],
+      "quote": ""
+    }
+  ]
+}

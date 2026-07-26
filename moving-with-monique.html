@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moving with Monique — Free Functional Fitness | GNO Health &amp; Wellness</title>
+<meta name="description" content="Moving with Monique is a free functional fitness class in New Orleans. All ages and abilities welcome. Saturdays at 11 AM at {{settings.venue}}.">
+<link rel="icon" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="GNO Health and Wellness Alliance home">
+      <img src="{{settings.logo}}" alt="GNO Health and Wellness Alliance logo">
+      <span><b>GNO Health &amp; Wellness</b><small>Alliance · New Orleans</small></span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html#mission">Mission</a>
+      <div class="has-drop">
+        <a class="drop-toggle" id="dropToggle" href="index.html#programs" aria-haspopup="true" aria-expanded="false">Programs <span class="caret">▾</span></a>
+        <div class="dropdown" id="dropMenu">
+          <a href="moving-with-monique.html">Moving with Monique<small>Free functional fitness</small></a>
+          <a href="elphage-organizing.html">Elphage Organizing<small>Clear space, clear mind</small></a>
+        </div>
+      </div>
+      <a href="index.html#community">Community</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="index.html#join">Join a Class</a>
+      <a href="index.html#involved">Get Involved</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-red" href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="phero">
+  <span class="hero-blur hb1"></span>
+  <div class="wrap phero-grid">
+    <div class="reveal">
+      <p class="crumbs"><a href="index.html">Home</a> › Programs › Moving with Monique</p>
+      <span class="eyebrow">{{mwm.hero_eyebrow}}</span>
+      <h1>{{mwm.hero_title}}</h1>
+      <p class="lead">{{mwm.hero_lead}}</p>
+      <div class="hero-cta">
+        <a class="btn btn-white" href="{{settings.reserve_url}}" target="_blank" rel="noopener">Reserve a free class <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#join">See class times</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="frame"><img src="fit-keg-2.jpg" alt="A member carrying weights during a Moving with Monique class"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT THE PROGRAM -->
+<section>
+  <div class="wrap">
+    <div class="prose reveal">
+      <span class="eyebrow">{{mwm.intro_eyebrow}}</span>
+      <h2 style="color:var(--navy);font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.1rem">{{mwm.intro_title}}</h2>
+      <p>{{mwm.intro_p1}}</p>
+      <p>{{mwm.intro_p2}}</p>
+      <p>{{mwm.intro_p3}}</p>
+      <div class="factbar">
+        <span class="fact"><b>Free</b> · always</span>
+        <span class="fact">All ages</span>
+        <span class="fact">All abilities</span>
+        <span class="fact">Seniors welcome</span>
+        <span class="fact">No experience needed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN / SCHEDULE -->
+<section class="join" id="join">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Class times</span>
+      <h2>{{mwm.join_title}}</h2>
+      <p>Our class is free and open to all. Here's how to save your spot.</p>
+    </div>
+    <div class="join-grid">
+      <div class="reveal">
+        <div class="sched">
+          <div class="row">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><span class="k">When</span><span class="v">{{settings.class_when}}</span></span>
+          </div>
+          <div class="row">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" stroke="#fff" stroke-width="1.8"/></svg></span>
+            <span><span class="k">Where</span><span class="v">{{settings.venue}} · {{settings.address}}</span></span>
+          </div>
+        </div>
+        <h3 style="color:var(--navy);font-size:1.3rem;margin-bottom:.8rem">How to save your spot</h3>
+        <ol class="steps">
+          <li>{{mwm.step1}}</li>
+          <li>{{mwm.step2}}</li>
+          <li>{{mwm.step3}}</li>
+          <li>{{mwm.step4}}</li>
+          <li>{{mwm.step5}}</li>
+        </ol>
+        <a class="btn btn-red" href="{{settings.reserve_url}}" target="_blank" rel="noopener">Reserve at {{settings.venue}} <span class="arr">→</span></a>
+      </div>
+      <div class="reveal">
+        <p style="margin-top:1rem;color:var(--ink-soft)">Not sure how to sign up online? That's okay. Call or text us at <a href="tel:{{settings.phone_tel}}" style="color:var(--red);font-weight:600">{{settings.phone_display}}</a> and we'll help you get started.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="community">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">In the gym</span>
+      <h2>{{mwm.gallery_title}}</h2>
+      <p>Real neighbors. Real effort. Lots of smiles.</p>
+    </div>
+    <div class="gal g3 reveal">
+{{computed.mwm_gallery}}
+    </div>
+    <p class="soon reveal">More photos and our summer workouts are coming soon.</p>
+  </div>
+</section>
+
+<!-- MEET YOUR COACH -->
+<section class="coach">
+  <div class="wrap coach-grid">
+    <div class="lead-portrait reveal">
+      <div class="frame"><img src="img-director.jpg" alt="Monique Dupard-Dayries, coach and Executive Director"></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Meet your coach</span>
+      <h2 style="color:var(--navy);font-size:clamp(1.8rem,3.5vw,2.6rem)">Monique Dupard-Dayries</h2>
+      <p style="font-size:1.1rem;color:var(--ink-soft);margin-top:1rem">Monique leads every class with heart. She makes sure each person feels safe, seen, and strong. Whether it's your first workout in years or your hundredth, she'll meet you right where you are.</p>
+      <div class="creds">
+        <span>CrossFit L2 Trainer</span>
+        <span>Personal Trainer</span>
+        <span>Hyrox Certified</span>
+        <span>Strongman</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap reveal">
+    <h2>{{mwm.cta_title}}</h2>
+    <p>Your first class is free, and so is every class after. We'll see you Saturday.</p>
+    <div class="btn-row">
+      <a class="btn btn-white" href="{{settings.reserve_url}}" target="_blank" rel="noopener">Reserve your free spot <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="index.html#involved" style="border-color:rgba(255,255,255,.6);color:#fff">Support the program</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-name">GNO Health &amp; Wellness Alliance</div>
+        <p>Free fitness and gentle wellness help across Greater New Orleans.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h5>Explore</h5>
+          <a href="index.html#mission">Mission</a>
+          <a href="moving-with-monique.html">Moving with Monique</a>
+          <a href="elphage-organizing.html">Elphage Organizing</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="index.html#join">Join a Class</a>
+        </div>
+        <div class="foot-col">
+          <h5>Connect</h5>
+          <a href="mailto:{{settings.email}}">Email us</a>
+          <a href="tel:{{settings.phone_tel}}">{{settings.phone_display}}</a>
+          <a href="{{settings.instagram_url}}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GNO Health and Wellness Alliance. All rights reserved.</span>
+      <span class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4Z" stroke="#6F8198" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        501(c)(3) Nonprofit · Gifts are tax-deductible
+      </span>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin:1.2rem 0 0;font-size:.8rem"><a href="/admin/" style="color:rgba(255,255,255,.45)">Staff login</a></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

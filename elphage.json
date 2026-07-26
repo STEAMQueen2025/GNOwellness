@@ -1,0 +1,59 @@
+{
+  "hero_eyebrow": "Program 02 · Clear Space, Clear Mind",
+  "hero_title": "Elphage Organizing",
+  "hero_lead": "Gentle help to clear your space — and your mind. One small step at a time.",
+  "intro_eyebrow": "Clear space, clear mind",
+  "intro_title": "Letting go can feel lighter.",
+  "intro_p1": "Losing someone is hard. So is everything after. We walk beside you through the work of letting go and clearing out. Your space — and your mind — can breathe again.",
+  "intro_p2": "Sometimes it's not a loss. It's just everyday clutter. What starts as a small pile of clothes to fold can turn into dread. It can feel like too much. But it can also become something good.",
+  "intro_p3": "<b>A little organizing can lead to a lot more breathing room.</b>",
+  "join_title": "Let's take the first step.",
+  "help_title": "Send us a note",
+  "help_text": "Tell us a little about your space and we'll take it from there — it only takes a minute.",
+  "cta_title": "Help us help our neighbors.",
+  "ba_title": "See what's possible.",
+  "ba_sub": "Real spaces we've helped clear. No judgment, ever — just a fresh start.",
+  "how_title": "Four gentle steps.",
+  "how_sub": "We move at your pace. You're always in charge.",
+  "how_cards": [
+    {
+      "title": "Reach out",
+      "text": "Tell us what you're facing. A little or a lot — it's all okay."
+    },
+    {
+      "title": "Make a plan",
+      "text": "We plan it together. No rush. No judgment. Your goals lead the way."
+    },
+    {
+      "title": "Clear it together",
+      "text": "We work side by side to sort, let go, and organize what stays."
+    },
+    {
+      "title": "Breathe again",
+      "text": "Enjoy your space — and the calm that comes with it."
+    }
+  ],
+  "ba_pairs": [
+    {
+      "before": "org-room-before.jpg",
+      "before_alt": "A cluttered bedroom before organizing",
+      "after": "org-room-after.jpg",
+      "after_alt": "The same bedroom, clean and calm after organizing",
+      "caption": "A child's bedroom — from overwhelmed to calm."
+    },
+    {
+      "before": "org-corner-before.jpg",
+      "before_alt": "A cluttered dresser and closet corner before organizing",
+      "after": "org-corner-after.jpg",
+      "after_alt": "The same corner, tidy and clear after organizing",
+      "caption": "A dresser corner — clutter cleared, space restored."
+    },
+    {
+      "before": "",
+      "before_alt": "",
+      "after": "org-closet-after.jpg",
+      "after_alt": "A neatly organized closet",
+      "caption": "A closet you can actually use again."
+    }
+  ]
+}

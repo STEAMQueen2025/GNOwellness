@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elphage Organizing — Clear Space, Clear Mind | GNO Health &amp; Wellness</title>
+<meta name="description" content="Elphage Organizing offers gentle, judgment-free help to declutter and let go — after a loss or just everyday clutter. A New Orleans nonprofit program.">
+<link rel="icon" href="logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="GNO Health and Wellness Alliance home">
+      <img src="{{settings.logo}}" alt="GNO Health and Wellness Alliance logo">
+      <span><b>GNO Health &amp; Wellness</b><small>Alliance · New Orleans</small></span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="index.html#mission">Mission</a>
+      <div class="has-drop">
+        <a class="drop-toggle" id="dropToggle" href="index.html#programs" aria-haspopup="true" aria-expanded="false">Programs <span class="caret">▾</span></a>
+        <div class="dropdown" id="dropMenu">
+          <a href="moving-with-monique.html">Moving with Monique<small>Free functional fitness</small></a>
+          <a href="elphage-organizing.html">Elphage Organizing<small>Clear space, clear mind</small></a>
+        </div>
+      </div>
+      <a href="index.html#community">Community</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="index.html#join">Join a Class</a>
+      <a href="index.html#involved">Get Involved</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-red" href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="phero">
+  <span class="hero-blur hb1"></span>
+  <div class="wrap phero-grid">
+    <div class="reveal">
+      <p class="crumbs"><a href="index.html">Home</a> › Programs › Elphage Organizing</p>
+      <span class="eyebrow">{{elphage.hero_eyebrow}}</span>
+      <h1>{{elphage.hero_title}}</h1>
+      <p class="lead">{{elphage.hero_lead}}</p>
+      <div class="hero-cta">
+        <a class="btn btn-white" href="{{settings.form_url}}" target="_blank" rel="noopener">Ask for help <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#before-after">See the results</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="frame"><img src="org-room-after.jpg" alt="A child's bedroom, clean and calm after an Elphage Organizing visit"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="wrap">
+    <div class="prose reveal">
+      <span class="eyebrow">{{elphage.intro_eyebrow}}</span>
+      <h2 style="color:var(--navy);font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:1.1rem">{{elphage.intro_title}}</h2>
+      <p>{{elphage.intro_p1}}</p>
+      <p>{{elphage.intro_p2}}</p>
+      <p>{{elphage.intro_p3}}</p>
+      <div class="factbar">
+        <span class="fact">Kind &amp; <b>judgment-free</b></span>
+        <span class="fact">Support after a loss</span>
+        <span class="fact">Paired with movement to heal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="ba" id="before-after">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Before &amp; after</span>
+      <h2>{{elphage.ba_title}}</h2>
+      <p>{{elphage.ba_sub}}</p>
+    </div>
+    <div class="ba-wrap">
+{{computed.ba_pairs}}
+    </div>
+    <p class="soon reveal" style="text-align:center">More before-and-after photos are coming soon.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>{{elphage.how_title}}</h2>
+      <p>{{elphage.how_sub}}</p>
+    </div>
+    <div class="how-grid reveal">
+      {{computed.how_cards}}
+    </div>
+  </div>
+</section>
+
+<!-- START / CONTACT -->
+<section class="join" id="start">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Ready to start?</span>
+      <h2>{{elphage.join_title}}</h2>
+      <p>Send us a note. We'll reach out and plan a time that works for you.</p>
+    </div>
+    <div class="join-grid">
+      <div class="reveal">
+        <p style="font-size:1.12rem;color:var(--ink-soft)">There's no cost and no pressure. Whether it's one closet or one room, we're here to help you let go — gently, and at your own pace.</p>
+        <a class="cline" href="mailto:{{settings.email}}" style="max-width:420px">
+          <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#0C2340" stroke-width="1.8"/><path d="m4 7 8 5 8-5" stroke="#0C2340" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span>{{settings.email}}<small>Email us anytime</small></span>
+        </a>
+        <a class="cline" href="tel:{{settings.phone_tel}}" style="max-width:420px">
+          <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L19 18l1 2v-2c0 .5-3 2-5 1.2C9 17 5 12 4.8 6 4.7 4.6 5 4 5 4Z" stroke="#0C2340" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+          <span>{{settings.phone_display}}<small>Call or text</small></span>
+        </a>
+      </div>
+
+      <div class="help-card reveal">
+        <h3>{{elphage.help_title}}</h3>
+        <p class="sub">{{elphage.help_text}}</p>
+        <a class="btn btn-red" href="{{settings.form_url}}" target="_blank" rel="noopener" style="width:100%;justify-content:center">Open our intake form <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap reveal">
+    <h2>{{elphage.cta_title}}</h2>
+    <p>Your gift keeps this program free for families who need a fresh start.</p>
+    <div class="btn-row">
+      <a class="btn btn-white" href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate today <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="{{settings.form_url}}" target="_blank" rel="noopener" style="border-color:rgba(255,255,255,.6);color:#fff">Ask for help</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-name">GNO Health &amp; Wellness Alliance</div>
+        <p>Free fitness and gentle wellness help across Greater New Orleans.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h5>Explore</h5>
+          <a href="index.html#mission">Mission</a>
+          <a href="moving-with-monique.html">Moving with Monique</a>
+          <a href="elphage-organizing.html">Elphage Organizing</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="index.html#join">Join a Class</a>
+        </div>
+        <div class="foot-col">
+          <h5>Connect</h5>
+          <a href="mailto:{{settings.email}}">Email us</a>
+          <a href="tel:{{settings.phone_tel}}">{{settings.phone_display}}</a>
+          <a href="{{settings.instagram_url}}" target="_blank" rel="noopener">Instagram</a>
+          <a href="{{settings.donate_url}}" target="_blank" rel="noopener">Donate</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GNO Health and Wellness Alliance. All rights reserved.</span>
+      <span class="badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 6v6c0 5 3.8 8.6 9 10 5.2-1.4 9-5 9-10V6l-9-4Z" stroke="#6F8198" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        501(c)(3) Nonprofit · Gifts are tax-deductible
+      </span>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin:1.2rem 0 0;font-size:.8rem"><a href="/admin/" style="color:rgba(255,255,255,.45)">Staff login</a></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

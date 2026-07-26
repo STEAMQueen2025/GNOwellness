@@ -1,0 +1,50 @@
+{
+  "hero_eyebrow": "Program 01 · Functional Fitness",
+  "hero_title": "Moving with Monique",
+  "hero_lead": "Free functional fitness for every body. Come as you are. Leave a little stronger.",
+  "intro_eyebrow": "About the class",
+  "intro_title": "Fitness that helps you in real life.",
+  "intro_p1": "Moving with Monique is our free fitness class. We do <b>functional fitness</b> — moves that help you every day. Think lifting, carrying, bending, and balance. These are the things real life asks of you.",
+  "intro_p2": "Every move can be made easier or harder. So the class works for everyone. Seniors, beginners, and pros all train side by side. You go at your own pace.",
+  "intro_p3": "Monique leads every class. She keeps it <b>fun, safe, and friendly</b>. You will never feel out of place here. You just show up, and we take care of the rest.",
+  "join_title": "When &amp; where to meet us.",
+  "step1": "Go to the <b>{{settings.venue}} schedule</b> using the button below.",
+  "step2": "Find Saturday's <b>\"Free Community Workout — Functional Fitness Class\"</b> at 11 AM. Tap <b>Reserve</b>.",
+  "step3": "New here? Pick <b>\"Non-member.\"</b> Then pick <b>\"Free Class — Drop-In Visit.\"</b>",
+  "step4": "Enter your email. Fill out the short form and sign the waivers.",
+  "step5": "Make a password so next time is quick.",
+  "gallery_title": "This is what class looks like.",
+  "cta_title": "Ready to move?",
+  "gallery": [
+    {
+      "wide": true,
+      "image": "img-community-large.jpg",
+      "alt": "Large class group photo",
+      "caption": "The whole crew, every age."
+    },
+    {
+      "wide": false,
+      "image": "fit-keg-1.jpg",
+      "alt": "Member carrying a keg weight",
+      "caption": "Strength for daily life."
+    },
+    {
+      "wide": false,
+      "image": "img-community-logo.jpg",
+      "alt": "Group gathered at the gym",
+      "caption": "Everyone belongs here."
+    },
+    {
+      "wide": false,
+      "image": "fit-group-dog.jpg",
+      "alt": "Smiling group with a small dog",
+      "caption": "Good company, too."
+    },
+    {
+      "wide": false,
+      "image": "fit-keg-2.jpg",
+      "alt": "Member carrying weights across the gym floor",
+      "caption": "Go at your own pace."
+    }
+  ]
+}
